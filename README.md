@@ -45,7 +45,7 @@ ABN AMRO Bank: Prive / Home
 
 #### Screenshot(s) van de tweede pagina (small screen):
 ABN AMRO Bank: Prive / Service en contact
-<img src="images/abnamro_service" width="375px" alt="De service en contact pagina van de ABN AMRO bank">
+<img src="images/abnamro_service.png" width="375px" alt="De service en contact pagina van de ABN AMRO bank">
  
 </details>
 
