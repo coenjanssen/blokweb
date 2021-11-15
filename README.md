@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Coen Janssen 
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Rood - Het blijft leuk om uitdaging te zoeken, maar vind het soms nog lastig.
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Surface Plane
  
 </details>
 
@@ -36,15 +36,16 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+De uitdaging voor mij wordt om de homepage van de ABN AMRO Bank na te maken.
+URL: https://www.abnamro.nl/nl/prive/index.html
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ABN AMRO Bank: Prive / Home
+<img src="images/abnamro_homepage.png" width="375px" alt="De homepage van de ABN AMRO bank">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ABN AMRO Bank: Prive / Service en contact
+<img src="images/abnamro_service" width="375px" alt="De service en contact pagina van de ABN AMRO bank">
  
 </details>
 
