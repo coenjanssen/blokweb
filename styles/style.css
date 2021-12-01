@@ -1,6 +1,6 @@
-/****************/
-/* CSS Document */
-/****************/
+/************************************************/
+/* CSS | Document                               */
+/************************************************/
 
 *,
 *::after,
@@ -10,9 +10,10 @@
   margin: 0px;
 }
 
-/****************/
-/* Font Library */
-/****************/
+
+/************************************************/
+/* General | Font Library | @import font        */
+/************************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
 
@@ -20,11 +21,9 @@
 
 
 
-/*********************/
-/* Custom Properties */
-/*********************/
-
-/* Colors in document */
+/************************************************/
+/* General | Custom Properties | Colors         */
+/************************************************/
 
 :root {
   --color-white: white;
@@ -35,9 +34,16 @@
   --color-secundairy: #00857a;
   --color-selected: #004c4c;
   --color-tertiary: #ffd200;
+  --color-footer: #ecebec;
 }
 
-/* Headings in document */
+
+
+
+
+/************************************************/
+/* General | Headings, paragraph, etc.          */
+/************************************************/
 
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -57,7 +63,7 @@ h2 {
   font-size: 24px;
   font-stretch: condensed;
   word-wrap: break-word;
-  margin: 0;
+  margin: 0px 0px 8px 0px;
 }
 
 h3 {
@@ -71,13 +77,22 @@ h3 {
   margin: 0;
 }
 
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0px 0px 16px 0px;
+}
 
 
 
 
-/********************/
-/* General settings */
-/********************/
+
+/************************************************/
+/* General | HTML Semantic Elements Settings    */
+/************************************************/
 
 body {
   background-color: var(--color-lightgray);
@@ -101,9 +116,40 @@ li {
 }
 
 
-/******************************************/
-/* Navigation > language & way of banking */
-/******************************************/
+
+
+
+/************************************************/
+/* Header | Nav | Div | Header afbeelding       */
+/************************************************/
+
+header div {
+  width: 100%;
+  height: 12.5em;
+}
+
+/* Header > img */
+
+header div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  /*Inhoud afbeelding wordt bijgesneden*/
+  object-position: 65% 10%;
+  /* Focus on eyes */
+}
+
+@media (min-width:32em) {
+  header div {
+    height: 25em;
+  }
+}
+
+
+/************************************************/
+/* Header | Nav | Ul 1 | Taal  & Bankieroptie   */
+/************************************************/
 
 header nav ul:first-of-type {
   background-color: var(--color-white);
@@ -195,9 +241,13 @@ header nav ul:first-of-type li:last-of-type a::after {
   align-items: center;
 }
 
-/*************************************/
-/* Navigation > Logo & Log-in button */
-/*************************************/
+
+
+
+
+/************************************************/
+/* Header | Nav | Ul 2 | Logo & Log-in button   */
+/************************************************/
 
 header nav ul:nth-of-type(2) {
   position: relative;
@@ -257,9 +307,13 @@ header nav ul:nth-of-type(2) li:nth-of-type(2) a:before {
   width: 20px;
 }
 
-/********************************/
-/* Navigation > Main navigation */
-/********************************/
+
+
+
+
+/************************************************/
+/* Header | Nav | Ul 3 | Hoofdnavigatie         */
+/************************************************/
 
 header nav ul:last-of-type a {
   display: flex;
@@ -295,7 +349,7 @@ header nav ul:last-of-type {
   justify-content: space-between;
   flex-direction: row;
   list-style: none;
-  width:90%;
+  width: 90%;
   overflow-x: scroll;
 }
 
@@ -313,15 +367,17 @@ header nav section {
   background-image: url(../images/search-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color:red;
-  transform:translateY(-100%);
+  background-color: red;
+  transform: translateY(-100%);
 }
 
 
 
-/*************************/
-/* Section: Action Block */
-/*************************/
+
+
+/************************************************/
+/* Main | Sect.1 | Art.1 | Huidige Actie        */
+/************************************************/
 
 
 main section:first-of-type {
@@ -373,13 +429,16 @@ main section:first-of-type article:first-of-type a {
 
 
 
-/*************************/
-/* Section: Search Block */
-/*************************/
+
+/************************************************/
+/* Main | Sect.1 | Art.2 | Zoeken               */
+/************************************************/
+
+
 
 main section:first-of-type {
   margin: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /* Greeting (depending on the time) */
@@ -447,13 +506,15 @@ input[type="submit"] {
 
 
 
-/*************************************************/
-/* Section 2 > Article > Block: 'direct regelen' */
-/*************************************************/
 
-main section:nth-of-type() {
+/************************************************/
+/* Main | Sect.2 | Article 1, 2, 3 | Details    */
+/************************************************/
+
+
+main section:nth-of-type(2) {
   margin: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 main article:nth-of-type(-n+3) {
@@ -508,23 +569,197 @@ main section:nth-of-type(2) article:nth-of-type(-n+3) {
 
 
 
-header div {
-  width: 100%;
-  height: 12.5em;
+
+/************************************************/
+/* Main | Sect.2 | Bereken uw lening            */
+/************************************************/
+
+
+
+main section:nth-of-type(3) {
+  background-color: var(--color-lightgray);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+  padding-bottom: 16px;
 }
 
-/* Header > img */
-
-header div img{
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; /*Inhoud afbeelding wordt bijgesneden*/
-  object-position: 65% 10%; /* Focus on eyes */
+main section:nth-of-type(3) h2,
+p {
+  padding: 0px 16px 0px 16px;
 }
 
-@media (min-width:32em) {
-  header div {
-    height: 25em;
-  }
+
+main section:nth-of-type(3) a:first-of-type {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primairy);
+  margin: 0px 16px 24px 16px;
+  padding: 22px 16px;
+
+  /*font language*/
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--color-white);
+  font-stretch: condensed;
+  line-height: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+main section:nth-of-type(3) a:last-of-type {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 0px 16px 0px 16px;
+
+  /*font language*/
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--color-primairy);
+  font-stretch: condensed;
+  line-height: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+main section:nth-of-type(3) a:last-of-type::after {
+  content: url(../images/chevron_right.svg)
+}
+
+main section:nth-of-type(3) img:first-of-type {
+  display: flex;
+  justify-content: flex-start;
+  order: -1;
+  width: 375px;
+  padding-bottom: 16px;
+}
+
+main section:nth-of-type(3) img:last-of-type {
+  border: 1px solid var(--color-black);
+  width: 375px;
+  order: -2;
+}
+
+/************************************************/
+/* Main | Sect.4 | Art. 1,2,3 | Ook interessant */
+/************************************************/
+
+
+
+main section:nth-of-type(4) h2 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 60px 0px ;
+}
+
+main section:nth-of-type(4) h3 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px;
+}
+
+main section:nth-of-type(4) article:nth-of-type(-n+3) p {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 0px 16px 0px;
+}
+
+main section:nth-of-type(4) article:nth-of-type(-n+3) a {
+  border-radius: 2px;
+  border: none;
+  background-color: var(--color-primairy);
+  padding: 8px 16px;
+  margin: 16px 16px 16px 16px;
+
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  min-width: 7.5em;
+  text-align: center;
+}
+
+main section:nth-of-type(4) article:nth-of-type(-n+3) {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 2px 0 rgb(34 34 34 / 8%);
+  margin: 16px;
+}
+
+main section:nth-of-type(4) article:nth-of-type(-n+3) img {
+  display: flex;
+  justify-content: flex-start;
+  order: -1;
+}
+
+
+
+
+/************************************************/
+/* Main | Sect.4 | Art.1 | Periodiek Beleggen   */
+/************************************************/
+
+/************************************************/
+/* Main | Sect.4 | Art.2 | Ontdek Grip          */
+/************************************************/
+
+/************************************************/
+/* Main | Sect.4 | Art.3 | Eindejaarstips       */
+/************************************************/
+
+/************************************************/
+/* Main | Sect.5 | Hulp Nodig?                  */
+/************************************************/
+
+
+
+/************************************************/
+/* Footer                                       */
+/************************************************/
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-footer);
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+footer ul li {
+  display: inline;
+  text-align: center;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+footer ul a {
+  display: flex;
+
+  /*font details*/
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--color-primairy);
+  line-height: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
 }
