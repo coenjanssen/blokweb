@@ -724,6 +724,51 @@ main section:nth-of-type(4) article:nth-of-type(-n+3) img {
 /* Main | Sect.5 | Hulp Nodig?                  */
 /************************************************/
 
+main section:nth-of-type(5) {
+  background-color: #16928b;
+  padding: 24px 16px 50px 16px;
+}
+
+main section:nth-of-type(5) h2 {
+  color: var(--color-white);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: 14px;
+  font-stretch: condensed;
+  word-wrap: break-word;
+  margin-bottom: 8px ;
+}
+
+main section:nth-of-type(5) p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--color-white);
+  line-height: 26px;
+  font-size: 14px;
+  margin: 0px 0px 20px 0px;
+  padding: 0;
+}
+
+main section:nth-of-type(5) a {
+  display: flex;
+  justify-content: center;
+  background-color: #0c7773;
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2em;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  min-width: 7.5em;
+  text-align: center;
+
+  padding: 6px 0px 6px 0px
+}
+
+main section:nth-of-type(5) a::before {
+  content: url(../images/chevron_right.svg)
+}
 
 
 /************************************************/
