@@ -43,13 +43,11 @@ main section:nth-of-type(2) ul {
 }
 
 main section:nth-of-type(2) ul li {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+
   height: 73px;
   background-color: var(--color-white);
   border-bottom: solid var(--color-gray) 1px;
-  padding: 12px 16px;
+  padding: 25px 16px;
 }
 
 main section:nth-of-type(2) ul li a {
@@ -85,6 +83,7 @@ main section:nth-of-type(2) ul li:first-of-type a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /* Geld overmaken */
@@ -93,6 +92,7 @@ main section:nth-of-type(2) ul li:nth-of-type(2) a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /* Mijn gegevens */
@@ -101,6 +101,7 @@ main section:nth-of-type(2) ul li:nth-of-type(3) a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /* Internet Bankieren en app */
@@ -109,6 +110,7 @@ main section:nth-of-type(2) ul li:nth-of-type(4) a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /* Schade melden */
@@ -117,6 +119,7 @@ main section:nth-of-type(2) ul li:nth-of-type(5) a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /* Producten */
@@ -125,6 +128,7 @@ main section:nth-of-type(2) ul li:nth-of-type(6) a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /* Kantoren */
@@ -133,6 +137,7 @@ main section:nth-of-type(2) ul li:nth-of-type(7) a::before {
   z-index: 100;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 /************************************************/
@@ -142,7 +147,7 @@ main section:nth-of-type(2) ul li:nth-of-type(7) a::before {
 main section:nth-of-type(3) {
   background-color: var(--color-white);
   margin: 0;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 16px 24px 16px;
 }
 
 main section:nth-of-type(3) h2 {
@@ -213,6 +218,8 @@ main section:nth-of-type(3) article:nth-of-type(-n+3) img {
 /* Main | Sect.4 | Feedback geven               */
 /************************************************/
 
+
+
 main section:nth-of-type(4) h3 {
   display: flex;
   justify-content: center;
@@ -224,6 +231,7 @@ main section:nth-of-type(4) ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding-bottom: 30px;
 }
 
 main section:nth-of-type(4) li {
@@ -238,23 +246,20 @@ main section:nth-of-type(4) button {
   height: 80px;
 }
 
-main section:nth-of-type(4) button:first-of-type {
+main section:nth-of-type(4) li:first-of-type button {
   background-image: url(../images/thumbs_up.png);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: 75%;
+  z-index: 100;
+}
+
+main section:nth-of-type(4) li:nth-of-type(2) button {
+  background-image: url(../images/thumbs_down.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
   z-index: 100;
 }
 
 
-main section:nth-of-type(4) form {
-    display: flex;
-    justify-content: center;
-}
-
-input[type="radio"] {
-  background-color: var(--button-light);
-  border-radius: 3px;
-  color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-  background-size: 64px;
-}

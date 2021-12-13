@@ -374,17 +374,6 @@ main section:nth-of-type(4) article:nth-of-type(-n+3) img {
 
 
 
-/************************************************/
-/* Main | Sect.4 | Art.1 | Periodiek Beleggen   */
-/************************************************/
-
-/************************************************/
-/* Main | Sect.4 | Art.2 | Ontdek Grip          */
-/************************************************/
-
-/************************************************/
-/* Main | Sect.4 | Art.3 | Eindejaarstips       */
-/************************************************/
 
 /************************************************/
 /* Main | Sect.5 | Hulp Nodig?                  */
@@ -436,6 +425,7 @@ main section:nth-of-type(5) a {
 main section:nth-of-type(5) a::before {
   content: url(../images/servicecontact.svg);
   align-items: center;
+  padding: 0px 5px 30px 0px;
   z-index: 100;
   width: 45px;
   height: 45px;
