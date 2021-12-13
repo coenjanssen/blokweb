@@ -58,7 +58,7 @@ ABN AMRO Bank: Prive / Service en contact
 
 NOTE: DEZE NOG TOEVOEGEN
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown_1" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -112,7 +112,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - Je maakt goed gebruik van de "selectors" binnen CSS, voeg wellicht nog wat annotaties toe.
 - Probeer vooruit te denken binnen de HTML, vul deze eerst en ga daarna pas stylen.
 - Werk op je pagina van boven naar beneden, om overzicht te bewaren.
-- Maak van de eerste drie <SECTION>'s een <NAV>, binnen die navigatie komt drie keer een <UL>.
+- Maak van de eerste drie SECTION's een NAV, binnen die navigatie komt drie keer een UL.
 - Maak backups van je website, zodat je styling en andere elementen terug kunt vinden.
 
 
@@ -265,8 +265,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
+1. https://www.abnamro.nl/ | Informatie, vormgeving, teksten en layout. 
+2. https://css-tricks.com/useful-nth-child-recipies/ | Voor het selecteren van meerdere kinderen.
 3. ...
 
 </details>
