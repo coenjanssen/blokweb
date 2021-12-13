@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Coen Janssen 
 
 #### Je startniveau:
-Rood - Het blijft leuk om uitdaging te zoeken, maar vind het soms nog lastig.
+Rood - Het blijft leuk om uitdaging te zoeken, maar vind het meestal nog erg lastig.
 
 #### Je focus:
 Surface Plane
@@ -56,15 +56,21 @@ ABN AMRO Bank: Prive / Service en contact
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-NOTE: DEZE NOG TOEVOEGEN
 ### de hele pagina: 
-<img src="images/breakdown_1" width="375px" alt="breakdown van de hele pagina">
+Ik heb geprobeerd om een breakdownschets te maken voordat ik startte met de website.
+Hierdoor zijn sommige elementen in het eindproduct anders uitgewerkt. 
+
+<img src="images/breakdown_1.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+Deze zoekfunctie is dynamisch doordat je op een "search-icon" klikt en dit venster
+van rechts naar links het beeld in schuift. Hiervoor maak ik gebruik van een input. 
+<img src="images/breakdown_2.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+In de officiele website is dit een dynamisch deel. Deze heb ik niet als breakdown-schets 
+uitgewerkt omdat ik deze alleen uit zal werken wanneer daar tijd voor over is. 
+<img src="images/breakdown_3.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -151,18 +157,17 @@ samen met je groepje opstellen
 
 | Adam           | Danian          | Shae           | Coen (ikzelf)    |
 | ---            | ---             | ---            | ---              |
-| Geen 		     | Geen            | Geen           | Geen             |
-| Bijzonderheden | Bijzonderheden  | Bijzonderheden | Bijzonderheden   |
+| Responsive controleren 		     | Uitwerking socials           | Formulier beter laten schalen          | Footer maken & search button toevoegen             |
+|  |   |  |    |
 | ...            | ...             | ...            | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Beginnen aan de tweede pagina.
+- De grootste issue (search button) is opgelost. 
+- De footer is uiteindelijk zelf gelukt om op te lossen.
 
 </details>
 
@@ -175,31 +180,41 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
+De toegankelijkheidstest is uitgevoerd samen met Danian Marengo (201). De test
+was opgedeeld in drie verschillende onderdelen, namelijk: bediening met toetsenbord,
+gebruiken van een screenreader en visuele beperkingen. 
+
+Danian heeft mijn website (https://wwww.abnamro.nl) getest en ik heb zijn uitwerking
+van (https://www.twix.com) gecontroleerd op deze onderdelen. 
+
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
++ De standaard hover heeft een goede en duidelijke kleur.
++ Je kunt navigeren (zoekbalk) met enter verzenden of via de button.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+- Navigatie focus-state wordt afgesneden (geen prioriteit - om op te lossen).
+- States toevoegen aan de buttons.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Navigeren met toetsenbord
+Het navigeren met enkel het toetsenbord in gebruik werkte verrassend goed op mijn website.
+Danian kon eenvoudig navigeren tussen de pagina's en van element naar element. 
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
++ Opmerking: Button states kunnen verder uitgewerkt worden (hover, active, e.d)
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Gebruik screenreader
+De website is goed te gebruiken met een screenreader. Zo wordt de informatie getoont
+en duidelijk voorgelezen. Danian merkte een paar kleine foutjes op.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
++ Opmerking: Controleer via screenreader op kleine foutjes tijdens het uitspreken van tekst.
+
+
+#### Visuele berperkingen
+De website is helaas niet tot nauwelijks te gebruiken voor mensen met een (visuele) beperking,
+dit komt ook voor bij de officiele website van de ABN AMRO. 
+
++ Opmerking: Kijk eventueel of je voor bepaalde beperkingen een oplossing kan bieden.
+
 
 </details>
 
@@ -219,20 +234,18 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Adam           | Danian          | Shae           | Coen (ikzelf)    |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Stijling van de navigatie  | 'After' op de headings           | In- en uitklapbare blokken maken    | Iconen in blokken uitlijnen    |
 | ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het uitlijnen van de iconen is gelukt en had te maken met padding. 
+- De HTML & CSS zien er netjes en verzorgd uit.
+- Voeg nog states en eventueel animaties toe om het cooler te maken.
 
 </details>
 
@@ -267,6 +280,12 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. https://www.abnamro.nl/ | Informatie, vormgeving, teksten en layout. 
 2. https://css-tricks.com/useful-nth-child-recipies/ | Voor het selecteren van meerdere kinderen.
-3. ...
+3. Cheun Yin Zhang (klas 201) | Assistentie bij vragen
+4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ | Layout vraagstukken en Flexbox.
+5. https://flexboxfroggy.com/ | Layout vraagstukken en Flexbox.
+6. https://codepen.io/shooft/pen/BaKGKwm | Menu maken (maar dan voor de zoekfunctie).
+7. https://codepen.io/shooft/pen/eYBdvey | Spelen met animaties.
+8. https://codepen.io/shooft/pen/MWyXLYW | Kolom maken & :before / :after toevoegen.
+9. https://dlo.mijnhva.nl/d2l/le/content/324289/Home | Alle slides van de lesstof (naslagwerk).
 
 </details>
