@@ -28,7 +28,7 @@ header div img {
   height: 100%;
   display: block;
   object-fit: cover;
-  /*Inhoud afbeelding wordt bijgesneden*/
+  /* Inhoud afbeelding wordt bijgesneden */
   object-position: 65% 10%;
   /* Focus on eyes */
 }
@@ -81,7 +81,7 @@ main section:first-of-type article:first-of-type a {
   padding: 22px 16px;
 
 
-  /*font language*/
+  /* Typography */
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
@@ -93,6 +93,9 @@ main section:first-of-type article:first-of-type a {
   text-align: center;
 }
 
+main section:first-of-type article:first-of-type a:hover {
+background-color: var(--button-yellow-hover);
+}
 
 
 
@@ -108,7 +111,7 @@ main section:first-of-type {
   padding-bottom: 10px;
 }
 
-/* Greeting (depending on the time) */
+/* Begroeting (depending on the time) */
 main section:first-of-type article:nth-of-type(2) h2 {
   color: var(--color-white);
   display: flex;
@@ -136,12 +139,11 @@ main section:first-of-type article:nth-of-type(2) form {
 main section:first-of-type article:nth-of-type(2) form input {
   left: calc(50% - 155.5px);
   height: 49px;
-  text-decoration: none;
 
   border: none;
   background-color: var(--color-white);
 
-  /*font details*/
+  /* Typography */
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
@@ -165,6 +167,7 @@ input[type="submit"] {
   align-self: center;
   background-image: url(../images/search-icon.svg);
   background-position: center;
+
   /* shows image */
   background-repeat: no-repeat;
   width: 15%;
@@ -213,13 +216,19 @@ main section:nth-of-type(2) article:nth-of-type(-n+3) a {
   padding-bottom: 12px;
   gap: 5px;
 
-  /*font language*/
+  /* Typography */
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   color: var(--color-primairy);
   font-size: 16px;
   cursor: pointer;
   align-items: center;
+  transition: .2s;
+}
+
+main section:nth-of-type(2) article:nth-of-type(-n+3) a:hover {
+  gap: 10px;
+  transition: .2s;
 }
 
 main section:nth-of-type(2) article:nth-of-type(-n+3) a:before {
@@ -265,7 +274,7 @@ main section:nth-of-type(3) a:first-of-type {
   margin: 0px 16px 24px 16px;
   padding: 22px 16px;
 
-  /*font language*/
+  /* Typography */
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
@@ -277,6 +286,10 @@ main section:nth-of-type(3) a:first-of-type {
   text-align: center;
 }
 
+main section:nth-of-type(3) a:first-of-type:hover {
+  background-color: var(--color-secundairy);
+}
+
 main section:nth-of-type(3) a:last-of-type {
   display: flex;
   justify-content: flex-start;
@@ -285,7 +298,7 @@ main section:nth-of-type(3) a:last-of-type {
   text-decoration: none;
   padding: 0px 16px 0px 16px;
 
-  /*font language*/
+  /* Typography */
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
@@ -295,6 +308,12 @@ main section:nth-of-type(3) a:last-of-type {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  transition: .2s;
+}
+
+main section:nth-of-type(3) a:last-of-type:hover {
+  transition: .2s;
+  font-weight: 600;
 }
 
 main section:nth-of-type(3) a:last-of-type::after {
@@ -356,6 +375,10 @@ main section:nth-of-type(4) article:nth-of-type(-n+3) a {
   text-align: center;
 }
 
+main section:nth-of-type(4) article:nth-of-type(-n+3) a:hover {
+background-color: var(--color-secundairy);
+}
+
 main section:nth-of-type(4) article:nth-of-type(-n+3) {
   display: flex;
   justify-content: flex-start;
@@ -370,7 +393,6 @@ main section:nth-of-type(4) article:nth-of-type(-n+3) img {
   justify-content: flex-start;
   order: -1;
 }
-
 
 
 
@@ -420,6 +442,10 @@ main section:nth-of-type(5) a {
   max-height: 40px;
 
   padding: 6px 0px 15px 0px
+}
+
+main section:nth-of-type(5) a:hover {
+  background-color: var(--color-primairy);
 }
 
 main section:nth-of-type(5) a::before {

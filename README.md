@@ -228,7 +228,17 @@ dit komt ook voor bij de officiele website van de ABN AMRO.
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Voortgang 3 in de vierde week voor het vak Frontend Development. Ik ben erg trots op wat ik
+tot nu toe heb neergezet, ondanks dat het nog altijd veel pijn en moeite kost om dingen te
+maken gaat zelfs dat stukje bij beetje beter. Ik vind het leuk om te doen op momenten dat het
+lukt en problemen oplossen zie ik nog altijd als een leuke uitdaging. 
+
+<img src="images/screenshot_versie3.png" width="375px" alt="Versie 3.0">
+
+De tweede pagina is afgerond en door middel van de voortgangsgesprekken zijn wat kleine problemen
+ook opgelost. Nu stort ik mezelf nog een beetje in de hovers van de buttons en eventueel nog wat
+extra oefeningen om de site nog wat leuker te maken. Echter vind ik dat nog vrij lastig dus ik kijk
+even hoe ver ik daarmee kom. Ik ben in ieder geval trots dat ik de twee pagina's goed heb na kunnen maken.
 
 
 ### Agenda voor meeting
@@ -261,9 +271,30 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Ik ben voor het vak Frontend Development snel begonnen met mijn website, dit met als reden dat ik 
+van mezelf weet dat ik het nog erg lastig vind en dus extra tijd hiervoor nog dacht te hebben. 
+Gelukkig lukte het mij aardig om de meeste elementen zelf te maken door middel van element inspecteren
+en daaruit de benodigde informatie halen. Uitdaging was natuurlijk om geen 'divjes' te gebruiken. 
+
+Uiteindelijk was de navigatiebar het lastigste van mijn website. Dit kwam omdat ik nog niet zo goed 
+was met het 'flexen' van elementen. Daarnaast bleef ik heel lang hangen met het maken van de search-button,
+uiteindelijk kon ik geen oplossing vinden en bleek dat in dit geval wel een 'div' handig zou zijn. Aangezien
+je deze eigenlijk niet mocht gebruiken dacht ik dat het anders kon en bleef ik hier lang mee zitten. 
+
+De rest van de pagina maken ging wel goed naar mate ik de flexbox beter onder de knie kreeg. Dit is iets
+wat ik in het eerste jaar helemaal niet begreep, eveneens als de 'nth-of-type' principes. Alhoewel ik nog
+graag meer toffere dingen had toegevoegd aan mijn website ben ik zeer te spreken over het eindresultaat en
+ben ik toch een beetje trots erop. Ik heb overigens een boek of HTML en CSS gekocht om er via deze manier
+voor te zorgen dat ik eerder op oplossingen kom en weet waar je goed kunt beginnen. Daarnaast ben ik ook
+van plan om af en toe wat experimenten ermee te doen om er zo meer mee te oefenen en er beter in te worden. 
+
+Ja, Sanne. Het was best leuk. Dankjewel ;)
+
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
+<img src="images/eindresultaat_1.png" width="375px" alt="Eindresultaat pagina 1">
+<img src="images/eindresultaat_2.png" width="375px" alt="Eindresultaat pagina 2">
 
 </details>
 

@@ -18,30 +18,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
 
 
-
-
-
 /************************************************/
 /* General | Custom Properties | Colors         */
 /************************************************/
 
+
 :root {
-  --color-white: white;
-  --color-black: #222222;
-  --color-darkgray: #666666;
-  --color-lightgray: #f9f9f9;
-  --color-lightgray-b6: #b6b6b6;
-  --color-gray: #dedede;
+  --color-white: white; 
+  --color-black: #222222; 
+  --color-darkgray: #666666; /* grijs tint 1 */
+  --color-lightgray: #f9f9f9; /* grijs tint 2 */
+  --color-lightgray-b6: #b6b6b6; /* grijs tint 3 */
+  --color-gray: #dedede; /* grijs tint 4 */
   --color-primairy: #005e5d;
   --color-secundairy: #00857a;
   --color-selected: #004c4c;
   --color-extra: #00716b;
   --color-footer-text: #00928e;
   --color-tertiary: #ffd200;
-  --color-footer: #ecebec;
-  --button-light: #e8f0f0;
+  --color-footer: #ecebec; /* grijs tint 5 */
+  --button-light: #e8f0f0; 
+  --button-yellow-hover: #D3B33C;
+  --button-light-hover: #d8f0ef;
+  --button-light-hover2: #C3D0D0;
+  --button-light-border: #ade0df;
+  --li-light-hover: #edf7f7;
 }
 
+@media (prefers-color-scheme:dark) {
+
+  :root {
+    /* Dark theme*/
+    --color-white: #1C1C1E;
+    --color-black: white;
+    --color-darkgray: #2C2C2E;
+    --color-lightgray: #2C2C2E;
+    --color-lightgray-b6: #545458;
+    --color-gray: #1C1C1E;
+    --color-footer: #2C2C2E;
+  }
+}
 
 
 
@@ -50,6 +66,7 @@
 /************************************************/
 /* General | Headings, paragraph, etc.          */
 /************************************************/
+
 
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -94,9 +111,12 @@ p {
 
 
 
+
+
 /************************************************/
 /* General | HTML Semantic Elements Settings    */
 /************************************************/
+
 
 body {
   background-color: var(--color-lightgray);
@@ -120,47 +140,46 @@ li {
 }
 
 
+
+
+
 /************************************************/
 /* Header | Nav | Ul 1 | Taal  & Bankieroptie   */
 /************************************************/
 
-header nav > ul:first-of-type {
-  background-color: var(--color-white);
-
-  list-style: none;
-  margin: 0;
-
+header nav>ul:first-of-type {
+  position: relative;
+  top: 0;
   width: 100%;
   height: 45px;
 
-  position: relative;
-  top: 0;
-  background-color: var(--color-white);
+  list-style: none;
+  margin: 0;
   padding: 8px 8px 12px 16px;
-
+  background-color: var(--color-white);
 }
 
-/*Flexbox */
-header nav > ul:first-of-type {
+/* Flexbox */
+header nav>ul:first-of-type {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   list-style: none;
   align-items: center;
   gap: 10px;
 }
 
 /* navigation > language > NL (styling) */
-header nav > ul:first-of-type li:first-of-type a {
+header nav>ul:first-of-type li:first-of-type a {
   display: flex;
   justify-content: flex-start;
-
-  border-right: 1px var(--color-gray) solid;
   padding-right: 5px;
 
+  border-right: 1px var(--color-gray) solid;
   text-decoration: none;
 
-  /*font language*/
+  /* Typography */
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: var(--color-selected);
@@ -171,10 +190,10 @@ header nav > ul:first-of-type li:first-of-type a {
 }
 
 /* navigation > language > EN (styling) */
-header nav > ul:first-of-type li:nth-of-type(2) a {
+header nav>ul:first-of-type li:nth-of-type(2) a {
   text-decoration: none;
 
-  /*font language*/
+  /* font details */
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--color-primairy);
@@ -186,11 +205,10 @@ header nav > ul:first-of-type li:nth-of-type(2) a {
 }
 
 /* navigation > Way of Banking (styling) */
-header nav > ul:first-of-type li:last-of-type a {
-
+header nav>ul:first-of-type li:last-of-type a {
   text-decoration: none;
 
-  /*font language*/
+  /* font details */
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--color-black);
@@ -200,13 +218,13 @@ header nav > ul:first-of-type li:last-of-type a {
   cursor: pointer;
 }
 
-header nav > ul:first-of-type li:last-of-type {
+header nav>ul:first-of-type li:last-of-type {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
 }
 
-header nav > ul:first-of-type li:last-of-type a::after {
+header nav>ul:first-of-type li:last-of-type a::after {
   content: url(../images/arrow_down_header.svg);
   width: 14px;
   height: 14px;
@@ -251,7 +269,7 @@ header nav ul:nth-of-type(2) li:nth-of-type(2) a {
   color: var(--color-black);
   text-decoration: none;
 
-  /*font language*/
+  /* Typography */
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--color-black);
@@ -269,6 +287,10 @@ header nav a img {
   cursor: pointer;
   display: flex;
   padding: 0 0 0 2px;
+}
+
+header nav ul:nth-of-type(2) li:nth-of-type(2) a:hover {
+  background-color: var(--button-yellow-hover);
 }
 
 /* Log-in button */
@@ -317,7 +339,7 @@ header nav section ul:last-of-type a::after {
 
 header nav section ul:last-of-type {
   /* Flexbox */
-  background-image: linear-gradient(-296deg, var(--color-primairy) , var(--color-secundairy));
+  background-image: linear-gradient(-296deg, var(--color-primairy), var(--color-secundairy));
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -336,28 +358,81 @@ header nav section {
   background-color: var(--color-extra);
 }
 
-header nav section button {
+header nav section:first-of-type button {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   width: 48px;
   border: none;
-  color: transparent; /* KAN DIT? */ 
+  color: transparent;
   background-image: url(../images/search_icon_white.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--color-extra);
   box-shadow: rgb(34 34 34 / 30%) -8px 0px 16px, rgb(34 34 34 / 2%) -8px 0px 8px;
+  cursor: pointer;
 }
 
+/************************************************/
+/* Header |  | Hoofdnavigatie + Zoeken          */
+/************************************************/
+
+header nav section:last-of-type {
+  inset: 0;
+  position:fixed;
+  background-color: var(--color-white);
+  z-index: 102;
+  transform:translatex(100%);
+  transition: .2s;
+}
+
+header nav section:last-of-type.openSearch {
+  transform:translatex(0%);
+  transition: .2s;
+}
+
+header nav section:last-of-type {
+  background-color: var(--color-lightgray);
+}
+
+header nav section:last-of-type form {
+  box-shadow: rgb(34 34 34 / 15%) 0px 4px 8px, rgb(34 34 34 / 2%) 0px 0px 6px;
+  text-decoration: none;
+
+  background-color: var(--color-white);
+
+  /* Typography */
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: 24px;
+  line-height: 24px;
+  cursor: pointer;
+  padding: 20px 16px;
+}
+
+header nav section:last-of-type form input {
+  border: none;
+  text-decoration: none;
+}
+
+header nav section:last-of-type form button {
+  border: none;
+  color: transparent;
+  background-image: url(../images/search_icon_back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
 
 
 
 /************************************************/
 /* Footer                                       */
 /************************************************/
-
 
 footer {
   display: flex;
@@ -389,13 +464,14 @@ footer ul:first-of-type li {
 footer ul:first-of-type li a:after {
   content: " | ";
   color: var(--color-footer-text);
-  padding: 0 5px;
+  padding: 0px 5px;
 }
 
 footer ul:first-of-type a {
   display: flex;
-  justify-content: center; 
-  /*font details*/
+  justify-content: center;
+
+  /* Typography */
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
@@ -424,6 +500,11 @@ footer ul:nth-of-type(2) li {
   margin: 2px;
   cursor: pointer;
   padding: 5px;
+}
+
+footer ul:nth-of-type(2) li:hover {
+  background-color: var(--color-secundairy);
+  transition: .2s;
 }
 
 

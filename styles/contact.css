@@ -64,18 +64,24 @@ main section:nth-of-type(2) ul li a {
   line-height: 24px;
   cursor: pointer;
 
-  /* Chevron Rigth */
+  /* Chevron Right */
   background-image: url(../images/chevron_right.svg);
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: calc(100% - 1px) center;
+  transition: .2s;
 
 }
 
-
-
+main section:nth-of-type(2) ul li:hover {
+  background-color: var(--li-light-hover);
+}
 
 /* Iconen ::before */
+main section:nth-of-type(2) ul li a:hover {
+  margin-right: -5px;
+  transition: .2s;
+}
 
 /* Betaalpassen */
 main section:nth-of-type(2) ul li:first-of-type a::before {
@@ -199,6 +205,10 @@ main section:nth-of-type(3) a {
   text-align: center;
 }
 
+main section:nth-of-type(3) a:hover {
+  background-color: var(--button-light-hover2);
+}
+
 main section:nth-of-type(3) article:nth-of-type(-n+3) {
   display: flex;
   justify-content: flex-start;
@@ -241,6 +251,7 @@ main section:nth-of-type(4) li {
 main section:nth-of-type(4) button {
   background-color: var(--button-light);
   border: 3px;
+  border-radius: 3px;
   color: transparent;
   width: 80px;
   height: 80px;
@@ -252,6 +263,11 @@ main section:nth-of-type(4) li:first-of-type button {
   background-repeat: no-repeat;
   background-size: 75%;
   z-index: 100;
+}
+
+main section:nth-of-type(4) li button:hover {
+  background-color: var(--button-light-hover);
+  border: 1px solid var(--button-light-border);
 }
 
 main section:nth-of-type(4) li:nth-of-type(2) button {
